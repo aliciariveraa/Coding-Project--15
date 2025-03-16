@@ -54,3 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
         riskForm.reset();
     });
 });
+
+
+// Task 3 - Removing Risk Items
+
+// Resolve button for removing risk card
+const resolveButton = document.createElement('button');
+resolveButton.textContent = 'Resolve';
+resolveButton.addEventListener('click', () => {
+    riskCard.remove(); // Removes the risk card when the button is clicked
+});
+riskCard.appendChild(resolveButton);
+
